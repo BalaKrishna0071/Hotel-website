@@ -32,7 +32,7 @@
         <div class="container">
             <h1 class="l-headings"><span class="text-primary">Contact</span>Us</h1>
             <p>Please fill out the form to contact us</p>
-            <form onsubmit="sendemail() reset(); return false;">
+            <form onsubmit="sendemail()">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" name="text" id="name" placeholder="Name">
@@ -87,7 +87,7 @@
         + "<br> phone no: " + document.getElementById("phone").value
         + "<br> message: " + document.getElementById("message").value
 }).then(
-  message => alert(message sent sucessfully)
+  message => alert(message)
 );
         }
     </script>
