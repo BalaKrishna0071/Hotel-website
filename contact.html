@@ -2,6 +2,21 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-24SBZ9X90H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-24SBZ9X90H');
+  </script>
+
+
+
+
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +47,7 @@
         <div class="container">
             <h1 class="l-headings"><span class="text-primary">Contact</span>Us</h1>
             <p>Please fill out the form to contact us</p>
-            <form onsubmit="sendemail()">
+            <form >
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" name="text" id="name" placeholder="Name">
@@ -72,25 +87,7 @@
     <footer id="main-footer">
         <p>Hotel BT &copy;2019, All rights reserved</p>
     </footer>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendemail(){
-            Email.send({
-    Host : "smtp.gmail.com",
-    Username : "balakrishna.bhubarpa",
-    Password : "Balakrishna@1207",
-    To : 'studyyy298@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "hotel enquiry form",
-    Body : "Name: " + document.getElementById("name").value 
-        + "<br> Email: " + document.getElementById("email").value
-        + "<br> phone no: " + document.getElementById("phone").value
-        + "<br> message: " + document.getElementById("message").value
-}).then(
-  message => alert(message)
-);
-        }
-    </script>
+   
 </body>
 
 </html>
